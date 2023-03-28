@@ -104,10 +104,8 @@ interface mwHookInstance {
 	add( fn: Function ): this;
 	/**
 	 * Fire an event for logging.
-	 *
-	 * @param [data] The data describing the event
 	 */
-	fire( data?: any ): void;
+	fire( ...args: any[] ): void;
 }
 
 interface MwMessage {
